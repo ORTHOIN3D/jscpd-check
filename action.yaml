@@ -1,0 +1,16 @@
+# action.yml
+name: 'Jscpd'
+description: 'Find code ducplicate copy/paste'
+inputs:
+  path:  
+    description: 'path to check'
+    required: true
+    default: './src'
+outputs:
+  output: # id of output
+    description: 'The output of jscpd'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ path }}
