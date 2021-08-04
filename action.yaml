@@ -1,6 +1,9 @@
 # action.yml
 name: 'Jscpd action'
 description: 'Find code ducplicate copy/paste'
+branding:
+  icon: 'code'
+  color: 'blue'
 inputs:
   path:  
     description: 'path to check'
