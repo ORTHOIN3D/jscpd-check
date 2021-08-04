@@ -9,6 +9,14 @@ inputs:
     description: 'path to check'
     required: true
     default: './src'
+  ignore:
+    description: 'glob pattern for files what should be excluded from duplication detection'
+    required: false
+    default: 'gerghehzthrtjyt'
+  threshold:
+    description: 'threshold for duplication, in case duplications >= threshold jscpd will exit with error'
+    required: false
+    default: 0.1
 outputs:
   output: # id of output
     description: 'The output of jscpd'
@@ -17,3 +25,5 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.path }}
+    - ${{ inputs.ignore }}
+    - ${{ inputs.threshold }}
