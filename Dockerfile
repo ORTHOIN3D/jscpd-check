@@ -5,4 +5,4 @@ LABEL "maintainer" = "Aurélien Moreau <aurelien.moreau@yienyien.net>"
 ADD entrypoint.sh /entrypoint.sh
 RUN yarn add jscpd
 
-ENTRYPOINT ["/entrypoint/sh"]
+ENTRYPOINT ["/entrypoint.sh"]
