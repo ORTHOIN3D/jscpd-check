@@ -1,5 +1,5 @@
 # action.yml
-name: 'Jscpd'
+name: 'Jscpd action'
 description: 'Find code ducplicate copy/paste'
 inputs:
   path:  
